@@ -15,4 +15,4 @@ variable_watch(CMAKE_CXX_SOURCE_FILE_EXTENSIONS add_ixx_to_cpp_extensions)
 project(test-modules CXX)
 add_executable(exec main.cxx a.ixx b.ixx)
 target_compile_features(exec PUBLIC cxx_std_20)
-target_compile_options(exec PUBLIC /fp:fast /stdIfcDir [=[ $(VC_IFCPath)]=])
+#target_compile_options(exec PUBLIC /stdIfcDir [=[ $(VC_IFCPath)]=]) # note: space is important to force cmake to quote string

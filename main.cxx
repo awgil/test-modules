@@ -1,8 +1,11 @@
+#include <iostream>
+
 import a;
 import b;
 
 int main()
 {
-	bar();
+	auto s = bar();
+	std::cout << s << std::endl;
 	return foo();
 }
